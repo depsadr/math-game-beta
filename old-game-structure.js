@@ -14,6 +14,25 @@ document.querySelector('.start_res_btn').addEventListener('click', ()=> {
     timer.style.display = 'block';
     // reduce time by one second
 
+//    function countdown(){
+//        var time = document.querySelector('#time');
+//        var x = 60;
+//        if (x <= 0){
+////            clearInterval(counter,0);
+//            //show game over message
+//            alert('Game Over');
+//        } else {
+//            var counter = setInterval(
+//            function(){x--;
+//            time.innerHTML = x;
+//            },1000);
+//        }
+//    }
+//
+//
+//    console.log(countdown());
+
+//    var countdown = document.querySelector('#minute1').value;
     var counter = 10;
 
 		setInterval( function(){
@@ -31,6 +50,11 @@ document.querySelector('.start_res_btn').addEventListener('click', ()=> {
 //                alert('Game Over');
 			}
 		}, 1000);
+
+//    if(i < 0){
+//        clearInterval(counter,0);
+//        alert('Game Over');
+//    }
 
 //change button text to reset game
 var reset = document.querySelector('.start_res_btn');
@@ -101,6 +125,46 @@ var answer4 = document.querySelector('#answer4');
 //        alert("Try again");
 //    }
 //}
+
+
+
+function objectTest (name, genre, link){
+    this.name = name;
+    this.genre = genre;
+    this.link = function link(link1){
+        this.link1 = link1;
+    };
+}
+
+var newTest = new objectTest('name', 'genre', '<a href="#">Test Link</a>');
+
+
+console.log(newTest);
+console.log(newTest.link);
+
+    var object = {
+        category1 : {
+            valantine : "easter",
+            reed : "book"
+        },
+        category2 : {
+            phone : "iPhone 3",
+            newPhone : "iPhone 7",
+            anotherPhone : "iPhoneX"
+        },
+        category3 : {
+            color1 : "blue",
+            color2 : "red",
+            color3 : "purple",
+            color4 : "green"
+        }
+    }
+console.log(object.category2.anotherPhone);
+
+object.category2.anotherPhone = "iPhone 11";
+
+console.log(object.category2.anotherPhone);
+
 
 });
 
