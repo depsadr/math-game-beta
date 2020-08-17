@@ -1,35 +1,23 @@
-const path = require('path')
-const express = require('express')
-const mockAPIResponse = require('./mockAPI.js')
-const bodyParser = require('body-parser')
+// Require Express to run server and routes
+const bodyParser = require('body-parser');
+const express = require('express');
+const cors = require('cors');
 
-const app = express()
+// Start up an instance of app
+const app = express();
 
-// to use url encoded values
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({
-  extended: true
-}))
+/* Middleware*/
+//Here we are configuring express to use body-parser as middle-ware to use url encoded values with JSON
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-// Corse for cross origin allowance
-const cors = require('cors')
-// to use json
-app.use(cors())
-// to prevent Access-Control-Allow-Origin error
-// app.use(function(req, res, next){
-//     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-//     next();
-// });
+// Cors for cross origin allowance
+app.use(cors());
 
-app.use(express.static('dist'))
+// Initialize the main project folder
+app.use(express.static('/'));
 
-console.log(__dirname)
-
-app.get('/', function (req, res) {
-    res.sendFile('dist/index.html')
-})
-
-// Setup Server
+// Setup Server Port
 const port = 3000;
 
 // Spin up the server
@@ -45,7 +33,7 @@ function listening(){
 //     console.log('Example app listening on port 8090!')
 // })
 
-app.get('/test', function (req, res) {
-    res.send(mockAPIResponse)
-})
+// app.get('/test', function (req, res) {
+//     res.send(mockAPIResponse)
+// })
 
