@@ -1,0 +1,27 @@
+{
+  "name": "math-game",
+  "version": "1.0.0",
+  "description": "beta math game",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depsadr/math-game-beta.git"
+  },
+  "keywords": [
+    "math",
+    "game",
+    "beta"
+  ],
+  "author": "Patrick Schubert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/depsadr/math-game-beta/issues"
+  },
+  "homepage": "https://github.com/depsadr/math-game-beta#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
