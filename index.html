@@ -1,87 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta name="description" content="Patrick Schubert - Math Game">
-		<meta name="keywords" content="patrick schubert, Math Game">
-		<meta name="author" content="Patrick Schubert">
-		<title>Patrick Schubert | Math Game</title>
-        <link rel="stylesheet" href="style.css">
 
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Patrick Schubert - Math Game">
+    <meta name="keywords" content="patrick schubert, Math Game">
+    <meta name="author" content="Patrick Schubert">
+    <title> Patrick | Schubert </title>
+    <link rel="stylesheet" href="styles/style.css">
 
-	<body>
+</head>
 
-		<header>
+<body>
 
-<!--            <div id="ad"></div>-->
+    <header>
 
-            <h3>Math Game</h3>
-		</header>
+        <!--            <div id="ad"></div>-->
 
-		<main>
+        <h3>Math Game</h3>
+    </header>
 
-                <div class="container">
-                    <div class="score">
-                        <p>Score: <span id="scorevalue">0</span></p>
+    <main>
+
+        <div class="container">
+
+            <div class="game-header">
+
+                <div class="level">
+                    <select class="select">
+                        <option class="option" id="level1" value="level1">Level 1</option>
+                        <option class="option" id="level1" value="level1">Level 2</option>
+                        <option class="option" id="level1" value="level1">Level 3</option>
+                    </select>
+                </div>
+
+                <div class="symbole">
+                    <select class="select">
+                        <option class="option" id="level1" value="level1">+</option>
+                        <option class="option" id="level1" value="level1">-</option>
+                        <option class="option" id="level1" value="level1">*</option>
+                    </select>
+                </div>
+
+                <div class="score">
+                    <p>Score: <span id="scorevalue">0</span></p>
+                </div>
+
+            </div> <!-- close game-header -->
+
+            <div class="correct">
+                <p>Correct</p>
+            </div>
+            <!--                        </div>-->
+
+            <div class="wrong">
+                <p>Try again</p>
+            </div>
+
+            <div class="question">
+                <p>Test</p>
+            </div>
+
+            <div class="choices">
+
+                <div class="choice_boxes">
+                    <div id="answer1" class="answer_box">
+                        <p>7343</p>
                     </div>
-                    
-<!--                    <div class="container">-->
-                    <div class="correct">
-                    <p>Correct</p>
+                </div>
+                <div class="choice_boxes">
+                    <div id="answer2" class="answer_box">7343</div>
+                </div>
+                <div class="choice_boxes">
+                    <div id="answer3" class="answer_box">
+                        <p>7343</p>
                     </div>
-<!--                        </div>-->
-                    
-                    <div class="wrong">
-                    <p>Try again</p>
+                </div>
+                <div class="choice_boxes">
+                    <div id="answer4" class="answer_box">
+                        <p>7343</p>
                     </div>
-                    
-                    <div class="question">
-                    <p>Test</p>
-                    </div>
-                    
-                    <div class="choices">
-                    
-                        <div class="choice_boxes">
-                        <div id="answer1" class="answer_box"><p>7343</p></div>
-                        </div>
-                        <div class="choice_boxes">
-                        <div id="answer2" class="answer_box">7343</div>
-                        </div>
-                        <div class="choice_boxes">
-                        <div id="answer3" class="answer_box"><p>7343</p></div>
-                        </div>
-                        <div class="choice_boxes">
-                        <div id="answer4" class="answer_box"><p>7343</p></div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="bottom_line">
-                        
-                        <div class="start_and_reset">
-                            <p>Start Game</p>
-                        </div>
-                    
-                        <div class="timer"><p>Time remaining <span id="time">60</span> sec.</p></div>
-                    
-                    </div>
-                    
-                    <div class="gameOver">
-                        <p>Game Over</p>
-                        <p>Your Score is <span class="counter"> 20 </span> </p>
-                    </div>
+                </div>
 
-<!--Close site container -->
-                    </div>
+            </div>
 
-		</main>
+            <div class="bottom_line">
 
-		<footer>
+                <div class="start_and_reset">
+                    <button class="start_res_btn">Start Game</button>
+                </div>
 
-        </footer>
-    
-    </body>
+                <!--
+                        <select class="select">
+                            <option class="minute" id="minute1" value="minute1">Minute1</option>
+                            <option class="minute" id="minute2" value="minute2">Minute2</option>
+                            <option class="minute" id="minute3" value="minute3">Minute3</option>
+                        </select>
+-->
+                <div class="timer">
+                    <p>Time remaining <span id="time">60</span> sec.</p>
+                </div>
+
+            </div>
+
+            <div class="gameOver">
+                <p>Game Over</p>
+                <p>Your Score is <span class="counter"> 100 </span> </p>
+            </div>
+
+        </div> <!-- close container -->
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
 </html>
