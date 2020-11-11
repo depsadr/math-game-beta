@@ -63,7 +63,7 @@ main {
 
 /****** SCORE ******/
 
-.score p {
+.score p, .name{
     background: #FBAC43;
     padding: 11px;
     border-radius: 5px;
