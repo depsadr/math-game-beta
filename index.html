@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Patrick Schubert - Math Game">
-    <meta name="keywords" content="patrick schubert, Math Game">
+    <meta name="description" content="This is a Math-Game for learning easy math task by answering multi choice boxes.">
+    <meta name="keywords" content="patrick schubert, Math Game, easy lerning math">
     <meta name="author" content="Patrick Schubert">
-    <title> Patrick | Schubert </title>
+    <title>Patrick's - Math-Game for easy lerning math</title>
     <link rel="stylesheet" href="styles/style.css">
 
 </head>
@@ -16,8 +16,6 @@
 <body>
 
     <header>
-
-        <!--            <div id="ad"></div>-->
 
         <h3>Math Game</h3>
     </header>
@@ -28,19 +26,22 @@
 
             <div class="game-header">
 
+                <p>Player 1: Your name</p>
+
                 <div class="level">
                     <select class="select">
                         <option class="option" id="level1" value="level1">Level 1</option>
-                        <option class="option" id="level1" value="level1">Level 2</option>
-                        <option class="option" id="level1" value="level1">Level 3</option>
+                        <option class="option" id="level2" value="level2">Level 2</option>
+                        <option class="option" id="level3" value="level3">Level 3</option>
                     </select>
                 </div>
 
                 <div class="symbole">
                     <select class="select">
-                        <option class="option" id="level1" value="level1">+</option>
-                        <option class="option" id="level1" value="level1">-</option>
-                        <option class="option" id="level1" value="level1">*</option>
+                        <option class="option" id="addition">+</option>
+                        <option class="option" id="subtraction">-</option>
+                        <option class="option" id="multiplication">*</option>
+                        <option class="option" id="difference">/</option>
                     </select>
                 </div>
 
@@ -53,7 +54,6 @@
             <div class="correct">
                 <p>Correct</p>
             </div>
-            <!--                        </div>-->
 
             <div class="wrong">
                 <p>Try again</p>
@@ -110,13 +110,15 @@
                 <p>Your Score is <span class="counter"> 100 </span> </p>
             </div>
 
-        </div> <!-- close container -->
+        </div>
 
     </main>
 
     <footer>
 
     </footer>
+
+    <script src="js/game-structure.js"></script>
 
 </body>
 
